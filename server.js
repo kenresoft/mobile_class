@@ -16,8 +16,6 @@ let users = [
 ];
 
 // GET /users
-app.use('/', express.static(path.join(__dirname, '')));
-
 app.get('/users', (req, res) => {
   res.status(200).json({ success: true, users });
 });
